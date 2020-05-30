@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://kapyaa-kki.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+</head>
+<body>
+    <h1 id="title">{{ object.title }}</h1>
+    <div class="box">
+        <p class="description"><span class="label">Description: {{ object.description }}</span></p>
+        <p><span class="label">Create Date: {{ object.create_date }}</span></p>
+        <p><span class="label">Modify Date: {{ object.modify_date }}</span></p>
+        <img src="{{ object.image.url }}" width="600" height="500">
+        <div id="disqus_thread"></div>
+    </div>
+</body>
+</html>
